@@ -1,0 +1,12 @@
+mail_pass = "ftdtfpmHuXxpDtdLaCuK"
+username = "edikm3324@mail.ru"
+imap_server = "imap.mail.ru"
+download_folder="c:/temp"
+webdav_hostname="https://webdav.cloud.mail.ru"
+send_attach = True #пересылка вложений, чтобы отключить нужен параметр False
+encoding="utf-8"
+repl=1  # сохранять файлы из писем
+IMEIS=["862757053728287","862757053728286","862757053728285"]
+fromadr="eduard.morgasov@yandex.ru"
+tokenbot="6404373961:AAEDG7Qr62lIlIY_BPyK54whebdSBMtgO6Q"
+chatid="-1002055707690"
