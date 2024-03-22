@@ -10,7 +10,7 @@ class Dog():
     def sit(self):
         print(f"{self.name} is now sitting.")
     def roll_over(self):
-        print(f"{self.name} rolled over!")
+        print(f"{self.name} rolled over!") 
     def Describe(self):
         print(f"Мою собаку зовут {self.name}.")
         print(f"Его возраст {round(self.age,1)} лет.") 
