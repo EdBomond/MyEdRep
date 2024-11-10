@@ -1,0 +1,78 @@
+{
+    "info": {
+        "system_info": {
+            "system": {
+                "comp_name": "EDM",
+                "os_name": "Windows 10",
+                "version": "10.0.19045",
+                "machine": "AMD64"
+            },
+            "processor": {
+                "name": "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel",
+                "phisycal_core": 4,
+                "all_core": 8,
+                "freq_max": "2201.00Мгц"
+            },
+            "ram": {
+                "volume": "7.91ГiB",
+                "aviable": "1.07ГiB",
+                "used": "6.84ГiB"
+            }
+        },
+        "disk_info": {
+            "C:\\": {
+                "file_system": "NTFS",
+                "size_total": "222.70ГiB",
+                "size_used": "192.02ГiB",
+                "size_free": "30.68ГiB",
+                "percent": "86.2"
+            },
+            "E:\\": {
+                "file_system": "NTFS",
+                "size_total": "723.84ГiB",
+                "size_used": "662.32ГiB",
+                "size_free": "61.52ГiB",
+                "percent": "91.5"
+            },
+            "F:\\": {
+                "file_system": "NTFS",
+                "size_total": "207.57ГiB",
+                "size_used": "154.25ГiB",
+                "size_free": "53.32ГiB",
+                "percent": "74.3"
+            }
+        },
+        "net_info": {
+            "Подключение по локальной сети": {
+                "mac": "38:60:77:5B:A0:34",
+                "ipv4": "169.254.82.16",
+                "ipv6": "fe80::7c1e:4013:539b:423c"
+            },
+            "Ethernet": {
+                "mac": "0A:00:27:00:00:03",
+                "ipv4": "192.168.56.1",
+                "ipv6": "fe80::ea82:ebce:ef76:c972"
+            },
+            "Подключение по локальной сети* 1": {
+                "mac": "16:2F:68:B2:93:5B",
+                "ipv4": "169.254.232.227",
+                "ipv6": "fe80::5aad:dc55:2f18:2d21"
+            },
+            "Подключение по локальной сети* 2": {
+                "mac": "26:2F:68:B2:93:5B",
+                "ipv4": "169.254.170.4",
+                "ipv6": "fe80::7a06:cdcf:bdea:2b19"
+            },
+            "Подключение по локальной сети 4": {
+                "mac": "00:FF:89:D6:DD:1F",
+                "ipv4": "169.254.117.78",
+                "ipv6": "fe80::5ffd:d13c:e8e8:3635"
+            },
+            "Беспроводное сетевое соединение": {
+                "mac": "74:2F:68:B2:93:5B",
+                "ipv4": "192.168.0.105",
+                "ipv6": "2a01:540:2649:6d00:5968:730:eed1:cdc7"
+            }
+        }
+    }
+}
