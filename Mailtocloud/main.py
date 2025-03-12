@@ -7,6 +7,7 @@ import function
 import traceback
 from webdav3.client import Client
 from datetime import datetime, timedelta
+import datetime
 
 import os
 
@@ -101,7 +102,10 @@ except (Exception) as exp:
     exit(0)
 
 imap.select("INBOX")
-result, data = imap.uid('search', "UNSEEN", "ALL")
+#result, data = imap.uid('search', "UNSEEN", "ALL")
+
+date = (datetime.date.today() - datetime.timedelta(0)).strftime("%d-%b-%Y")
+result, data = imap.uid('search', None, '(SENTSINCE {date})'.format(date=date))
 print(result)
 print(data)
 #result, data = imap.uid('search', None, 'ALL')
@@ -170,4 +174,3 @@ else:
 #if unseen_msg[0]:
 print(f"Обработка писем закончена!")
 #bot.polling()
-

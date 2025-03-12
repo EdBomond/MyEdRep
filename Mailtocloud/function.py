@@ -182,7 +182,7 @@ async def send_document(document, filename, IMEI, client, msg_date, bot, chatid,
         #print(f"Направили текст в чат {chatid} телеграмма")
         img = open(download_path, 'rb')
         print(f"Открыли фотографию {download_path}")
-        bot.send_photo(chatid, img)
+        #bot.send_photo(chatid, img)
         print(f"Отправили фотографию {download_path} в чат телеграмма")
         fp.close()
 

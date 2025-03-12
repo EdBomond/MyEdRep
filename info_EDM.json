@@ -15,23 +15,23 @@
             },
             "ram": {
                 "volume": "7.91ГiB",
-                "aviable": "1.07ГiB",
-                "used": "6.84ГiB"
+                "aviable": "1016.80MiB",
+                "used": "6.92ГiB"
             }
         },
         "disk_info": {
             "C:\\": {
                 "file_system": "NTFS",
                 "size_total": "222.70ГiB",
-                "size_used": "192.02ГiB",
-                "size_free": "30.68ГiB",
+                "size_used": "192.03ГiB",
+                "size_free": "30.66ГiB",
                 "percent": "86.2"
             },
             "E:\\": {
                 "file_system": "NTFS",
                 "size_total": "723.84ГiB",
-                "size_used": "662.32ГiB",
-                "size_free": "61.52ГiB",
+                "size_used": "662.35ГiB",
+                "size_free": "61.49ГiB",
                 "percent": "91.5"
             },
             "F:\\": {
@@ -72,6 +72,788 @@
                 "mac": "74:2F:68:B2:93:5B",
                 "ipv4": "192.168.0.105",
                 "ipv6": "2a01:540:2649:6d00:5968:730:eed1:cdc7"
+            }
+        },
+        "app_installed": {
+            "Пакет драйверов Windows - Silicon Laboratories Inc. (silabser) Ports  (06/13/2018 6.7.6.2130)": {
+                "name": "Пакет драйверов Windows - Silicon Laboratories Inc. (silabser) Ports  (06/13/2018 6.7.6.2130)",
+                "version": "06/13/2018 6.7.6.2130",
+                "publisher": "Silicon Laboratories Inc."
+            },
+            "Пакет драйверов Windows - Adafruit Industries LLC (usbser) Ports  (02/25/2016 6.2.2600.0)": {
+                "name": "Пакет драйверов Windows - Adafruit Industries LLC (usbser) Ports  (02/25/2016 6.2.2600.0)",
+                "version": "02/25/2016 6.2.2600.0",
+                "publisher": "Adafruit Industries LLC"
+            },
+            "Пакет драйверов Windows - libusb-win32 (libusb0) libusb-win32 devices  (04/21/2015 1.0.0.0)": {
+                "name": "Пакет драйверов Windows - libusb-win32 (libusb0) libusb-win32 devices  (04/21/2015 1.0.0.0)",
+                "version": "04/21/2015 1.0.0.0",
+                "publisher": "libusb-win32"
+            },
+            "Пакет драйверов Windows - Arduino Srl (www.arduino.org) Arduino USB Driver (03/19/2015 1.1.1.0)": {
+                "name": "Пакет драйверов Windows - Arduino Srl (www.arduino.org) Arduino USB Driver (03/19/2015 1.1.1.0)",
+                "version": "03/19/2015 1.1.1.0",
+                "publisher": "Arduino Srl (www.arduino.org)"
+            },
+            "Пакет драйверов Windows - SAMSUNG Electronics Co., Ltd.  (WinUSB) AndroidUsbDeviceClass  (12/02/2015 2.12.1.0)": {
+                "name": "Пакет драйверов Windows - SAMSUNG Electronics Co., Ltd.  (WinUSB) AndroidUsbDeviceClass  (12/02/2015 2.12.1.0)",
+                "version": "12/02/2015 2.12.1.0",
+                "publisher": "SAMSUNG Electronics Co., Ltd. "
+            },
+            "Пакет драйверов Windows - SAMSUNG Electronics Co., Ltd.  (dg_ssudbus) USB  (12/02/2015 2.12.1.0)": {
+                "name": "Пакет драйверов Windows - SAMSUNG Electronics Co., Ltd.  (dg_ssudbus) USB  (12/02/2015 2.12.1.0)",
+                "version": "12/02/2015 2.12.1.0",
+                "publisher": "SAMSUNG Electronics Co., Ltd. "
+            },
+            "Пакет драйверов Windows - SAMSUNG Electronics Co., Ltd.  (ssudmdm) Modem  (12/02/2015 2.12.1.0)": {
+                "name": "Пакет драйверов Windows - SAMSUNG Electronics Co., Ltd.  (ssudmdm) Modem  (12/02/2015 2.12.1.0)",
+                "version": "12/02/2015 2.12.1.0",
+                "publisher": "SAMSUNG Electronics Co., Ltd. "
+            },
+            "Пакет драйверов Windows - Arduino LLC (www.arduino.cc) Arduino USB Driver (11/24/2015 1.2.3.0)": {
+                "name": "Пакет драйверов Windows - Arduino LLC (www.arduino.cc) Arduino USB Driver (11/24/2015 1.2.3.0)",
+                "version": "11/24/2015 1.2.3.0",
+                "publisher": "Arduino LLC (www.arduino.cc)"
+            },
+            "Пакет драйверов Windows - Silicon Laboratories Inc. (silabser) Ports  (09/19/2016 6.7.4.261)": {
+                "name": "Пакет драйверов Windows - Silicon Laboratories Inc. (silabser) Ports  (09/19/2016 6.7.4.261)",
+                "version": "09/19/2016 6.7.4.261",
+                "publisher": "Silicon Laboratories Inc."
+            },
+            "Пакет драйверов Windows - Linino (usbser) Ports  (01/13/2014 1.0.0.0)": {
+                "name": "Пакет драйверов Windows - Linino (usbser) Ports  (01/13/2014 1.0.0.0)",
+                "version": "01/13/2014 1.0.0.0",
+                "publisher": "Linino"
+            },
+            "Пакет драйверов Windows - Google, Inc. (WinUSB) AndroidUsbDeviceClass  (08/27/2012 7.0.0000.00004)": {
+                "name": "Пакет драйверов Windows - Google, Inc. (WinUSB) AndroidUsbDeviceClass  (08/27/2012 7.0.0000.00004)",
+                "version": "08/27/2012 7.0.0000.00004",
+                "publisher": "Google, Inc."
+            },
+            "Пакет драйверов Windows - Silicon Laboratories Inc. (silabser) Ports  (05/23/2018 6.7.6.2130)": {
+                "name": "Пакет драйверов Windows - Silicon Laboratories Inc. (silabser) Ports  (05/23/2018 6.7.6.2130)",
+                "version": "05/23/2018 6.7.6.2130",
+                "publisher": "Silicon Laboratories Inc."
+            },
+            "CPUID HWMonitor 1.43": {
+                "name": "CPUID HWMonitor 1.43",
+                "version": "1.43",
+                "publisher": "CPUID, Inc."
+            },
+            "DAEMON Tools Lite": {
+                "name": "DAEMON Tools Lite",
+                "version": "10.6.0.0283",
+                "publisher": "Disc Soft Ltd"
+            },
+            "digiKam 7.9.0": {
+                "name": "digiKam 7.9.0",
+                "version": "7.9.0",
+                "publisher": "The digiKam team"
+            },
+            "Пакет драйверов Windows - Arduino LLC (www.arduino.cc) Genuino USB Driver (01/07/2016 1.0.3.0)": {
+                "name": "Пакет драйверов Windows - Arduino LLC (www.arduino.cc) Genuino USB Driver (01/07/2016 1.0.3.0)",
+                "version": "01/07/2016 1.0.3.0",
+                "publisher": "Arduino LLC (www.arduino.cc)"
+            },
+            "Git": {
+                "name": "Git",
+                "version": "2.47.0.2",
+                "publisher": "The Git Development Community"
+            },
+            "KYOCERA Client Tool": {
+                "name": "KYOCERA Client Tool",
+                "version": "1.1.0027",
+                "publisher": "KYOCERA Document Solutions Inc."
+            },
+            "Kyocera Product Library": {
+                "name": "Kyocera Product Library",
+                "version": "4.2.1909",
+                "publisher": "KYOCERA Document Solutions Inc."
+            },
+            "MATLAB Runtime R2023a": {
+                "name": "MATLAB Runtime R2023a",
+                "version": "9.14",
+                "publisher": "MathWorks"
+            },
+            "Microsoft SQL Server 2008 R2 (64-разрядная версия)": {
+                "name": "Microsoft SQL Server 2008 R2 (64-разрядная версия)",
+                "version": null,
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)": {
+                "name": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)",
+                "version": "10.0.50903",
+                "publisher": "Microsoft Corporation"
+            },
+            "Языковой пакет Microsoft Visual Studio 2010 Tools для среды выполнения Office (x64) - RUS": {
+                "name": "Языковой пакет Microsoft Visual Studio 2010 Tools для среды выполнения Office (x64) - RUS",
+                "version": "10.0.50903",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Office профессиональный плюс 2010": {
+                "name": "Microsoft Office профессиональный плюс 2010",
+                "version": "14.0.7015.1000",
+                "publisher": "Microsoft Corporation"
+            },
+            "PostgreSQL 15 ": {
+                "name": "PostgreSQL 15 ",
+                "version": "15",
+                "publisher": "PostgreSQL Global Development Group"
+            },
+            "Shotcut": {
+                "name": "Shotcut",
+                "version": "22.04.25",
+                "publisher": "Meltytech, LLC"
+            },
+            "Vulkan Run Time Libraries 1.0.42.1": {
+                "name": "Vulkan Run Time Libraries 1.0.42.1",
+                "version": "1.0.42.1",
+                "publisher": "LunarG, Inc."
+            },
+            "WinRAR 6.10 (64-bit)": {
+                "name": "WinRAR 6.10 (64-bit)",
+                "version": "6.10.0",
+                "publisher": "win.rar GmbH"
+            },
+            "Microsoft System CLR Types for SQL Server 2012 (x64)": {
+                "name": "Microsoft System CLR Types for SQL Server 2012 (x64)",
+                "version": "11.1.3366.16",
+                "publisher": "Microsoft Corporation"
+            },
+            "Canon MG5400 series MP Drivers": {
+                "name": "Canon MG5400 series MP Drivers",
+                "version": "1.01",
+                "publisher": "Canon Inc."
+            },
+            "Canon MP280 series MP Drivers": {
+                "name": "Canon MP280 series MP Drivers",
+                "version": null,
+                "publisher": "Canon Inc."
+            },
+            "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219": {
+                "name": "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219",
+                "version": "10.0.40219",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Update Health Tools": {
+                "name": "Microsoft Update Health Tools",
+                "version": "3.74.0.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729": {
+                "name": "Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729",
+                "version": "9.0.30729",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Web Deploy 3.5": {
+                "name": "Microsoft Web Deploy 3.5",
+                "version": "3.1237.1762",
+                "publisher": "Microsoft Corporation"
+            },
+            "CPUID HWMonitor 1.36": {
+                "name": "CPUID HWMonitor 1.36",
+                "version": null,
+                "publisher": null
+            },
+            "Microsoft SQL Server 2012 Management Objects  (x64)": {
+                "name": "Microsoft SQL Server 2012 Management Objects  (x64)",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server System CLR Types (x64)": {
+                "name": "Microsoft SQL Server System CLR Types (x64)",
+                "version": "10.50.1600.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Java(TM) SE Development Kit 11.0.21 (64-bit)": {
+                "name": "Java(TM) SE Development Kit 11.0.21 (64-bit)",
+                "version": "11.0.21.0",
+                "publisher": "Oracle Corporation"
+            },
+            "Microsoft SQL Server 2012 Transact-SQL ScriptDom ": {
+                "name": "Microsoft SQL Server 2012 Transact-SQL ScriptDom ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Bonjour": {
+                "name": "Bonjour",
+                "version": "3.1.0.1",
+                "publisher": "Apple Inc."
+            },
+            "Microsoft SQL Server 2012 Command Line Utilities ": {
+                "name": "Microsoft SQL Server 2012 Command Line Utilities ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Среда Microsoft SQL Server Management Studio Express": {
+                "name": "Среда Microsoft SQL Server Management Studio Express",
+                "version": "9.00.5000.00",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161": {
+                "name": "Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161",
+                "version": "9.0.30729.6161",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server 2012 Express LocalDB ": {
+                "name": "Microsoft SQL Server 2012 Express LocalDB ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2005 Redistributable (x64)": {
+                "name": "Microsoft Visual C++ 2005 Redistributable (x64)",
+                "version": "8.0.61000",
+                "publisher": "Microsoft Corporation"
+            },
+            "Apple Mobile Device Support": {
+                "name": "Apple Mobile Device Support",
+                "version": "14.5.0.7",
+                "publisher": "Apple Inc."
+            },
+            "Поддержка программ Apple (64 бит)": {
+                "name": "Поддержка программ Apple (64 бит)",
+                "version": "8.7",
+                "publisher": "Apple Inc."
+            },
+            "Microsoft SQL Server Compact 4.0 SP1 x64 ENU": {
+                "name": "Microsoft SQL Server Compact 4.0 SP1 x64 ENU",
+                "version": "4.0.8876.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "IIS 8.0 Express": {
+                "name": "IIS 8.0 Express",
+                "version": "8.0.1557",
+                "publisher": "Microsoft Corporation"
+            },
+            "Программа устан. Microsoft SQL Server 2008 R2 (на рус. языке)": {
+                "name": "Программа устан. Microsoft SQL Server 2008 R2 (на рус. языке)",
+                "version": "10.50.1600.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "iCloud": {
+                "name": "iCloud",
+                "version": "7.21.0.23",
+                "publisher": "Apple Inc."
+            },
+            "Microsoft Visio Viewer 2013": {
+                "name": "Microsoft Visio Viewer 2013",
+                "version": "15.0.4569.1506",
+                "publisher": "Microsoft Corporation"
+            },
+            "Файлы поддержки программы установки Microsoft SQL Server 2008 ": {
+                "name": "Файлы поддержки программы установки Microsoft SQL Server 2008 ",
+                "version": "10.1.2731.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "IIS Express Application Compatibility Database for x64": {
+                "name": "IIS Express Application Compatibility Database for x64",
+                "version": null,
+                "publisher": null
+            },
+            "Microsoft SQL Server VSS Writer": {
+                "name": "Microsoft SQL Server VSS Writer",
+                "version": "10.50.1600.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server 2012 Data-Tier App Framework  (x64)": {
+                "name": "Microsoft SQL Server 2012 Data-Tier App Framework  (x64)",
+                "version": "11.1.2902.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "NVIDIA GeForce Experience 3.10.0.95": {
+                "name": "NVIDIA GeForce Experience 3.10.0.95",
+                "version": "3.10.0.95",
+                "publisher": "NVIDIA Corporation"
+            },
+            "NVIDIA Системное программное обеспечение PhysX 9.17.0329": {
+                "name": "NVIDIA Системное программное обеспечение PhysX 9.17.0329",
+                "version": "9.17.0329",
+                "publisher": "NVIDIA Corporation"
+            },
+            "Oracle VM VirtualBox 6.1.50": {
+                "name": "Oracle VM VirtualBox 6.1.50",
+                "version": "6.1.50",
+                "publisher": "Oracle Corporation"
+            },
+            "Microsoft SQL Server 2008 R2 Native Client": {
+                "name": "Microsoft SQL Server 2008 R2 Native Client",
+                "version": "10.50.1600.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server 2012 Native Client ": {
+                "name": "Microsoft SQL Server 2012 Native Client ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Update for x64-based Windows Systems (KB5001716)": {
+                "name": "Update for x64-based Windows Systems (KB5001716)",
+                "version": "8.94.0.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Finger Sensing Pad Driver": {
+                "name": "Finger Sensing Pad Driver",
+                "version": "9.4.9.5",
+                "publisher": "Sentelic"
+            },
+            "Liberica JDK 8 (64-bit)": {
+                "name": "Liberica JDK 8 (64-bit)",
+                "version": "8.0.362.9",
+                "publisher": "BellSoft"
+            },
+            "IIS Express Application Compatibility Database for x86": {
+                "name": "IIS Express Application Compatibility Database for x86",
+                "version": null,
+                "publisher": null
+            },
+            "Adobe Flash Player 32 PPAPI": {
+                "name": "Adobe Flash Player 32 PPAPI",
+                "version": "32.0.0.414",
+                "publisher": "Adobe"
+            },
+            "Adobe Genuine Service": {
+                "name": "Adobe Genuine Service",
+                "version": null,
+                "publisher": "Adobe"
+            },
+            "Audacity 2.2.1": {
+                "name": "Audacity 2.2.1",
+                "version": "2.2.1",
+                "publisher": "Audacity Team"
+            },
+            "Canon Easy-PhotoPrint Editor": {
+                "name": "Canon Easy-PhotoPrint Editor",
+                "version": "1.7.1",
+                "publisher": "Canon Inc."
+            },
+            "Canon IJ Scan Utility": {
+                "name": "Canon IJ Scan Utility",
+                "version": null,
+                "publisher": "‪Canon Inc.‬"
+            },
+            "Chrone Browser": {
+                "name": "Chrone Browser",
+                "version": "86.0.4240.198",
+                "publisher": "iStart"
+            },
+            "digiKam 7.3.0": {
+                "name": "digiKam 7.3.0",
+                "version": "7.3.0",
+                "publisher": "The digiKam team"
+            },
+            "Download Master 7.0.1.1709": {
+                "name": "Download Master 7.0.1.1709",
+                "version": "7.0.1.1709",
+                "publisher": "WestByte"
+            },
+            "Firefox Browser": {
+                "name": "Firefox Browser",
+                "version": "94.0.2",
+                "publisher": "iStart"
+            },
+            "Google Chrome": {
+                "name": "Google Chrome",
+                "version": "130.0.6723.117",
+                "publisher": "Google LLC"
+            },
+            "SmartSound Quicktracks 5": {
+                "name": "SmartSound Quicktracks 5",
+                "version": "5.1.6",
+                "publisher": "SmartSound Software Inc."
+            },
+            "Renesas Electronics USB 3.0 Host Controller Driver": {
+                "name": "Renesas Electronics USB 3.0 Host Controller Driver",
+                "version": "2.0.34.0",
+                "publisher": "Renesas Electronics Corporation"
+            },
+            "SmartSound Common Data": {
+                "name": "SmartSound Common Data",
+                "version": "1.1.0",
+                "publisher": "SmartSound Software Inc."
+            },
+            "Kaspersky Secure Connection": {
+                "name": "Kaspersky Secure Connection",
+                "version": "20.0.14.1085",
+                "publisher": "Лаборатория Касперского"
+            },
+            "Kaspersky": {
+                "name": "Kaspersky",
+                "version": "21.19.7.527",
+                "publisher": "Лаборатория Касперского"
+            },
+            "Kaspersky Password Manager": {
+                "name": "Kaspersky Password Manager",
+                "version": "9.0.2.767",
+                "publisher": "Kaspersky Lab"
+            },
+            "Kaspersky Safe Kids": {
+                "name": "Kaspersky Safe Kids",
+                "version": "23.0.0.418",
+                "publisher": "Лаборатория Касперского"
+            },
+            "JMRI - Java Model Railroad Interface": {
+                "name": "JMRI - Java Model Railroad Interface",
+                "version": "5.6+R89a87446cb",
+                "publisher": "JMRI Community"
+            },
+            "Microsoft Edge": {
+                "name": "Microsoft Edge",
+                "version": "130.0.2849.80",
+                "publisher": "Корпорация Майкрософт"
+            },
+            "Среда выполнения Microsoft Edge WebView2 Runtime": {
+                "name": "Среда выполнения Microsoft Edge WebView2 Runtime",
+                "version": "130.0.2849.56",
+                "publisher": "Корпорация Майкрософт"
+            },
+            "Microsoft Help Viewer 2.1": {
+                "name": "Microsoft Help Viewer 2.1",
+                "version": "2.1.21005",
+                "publisher": "Microsoft Corporation"
+            },
+            "Eclipse Mosquitto MQTT broker (64 bit)": {
+                "name": "Eclipse Mosquitto MQTT broker (64 bit)",
+                "version": "2.0.15",
+                "publisher": null
+            },
+            "Canon MP Navigator EX 4.0": {
+                "name": "Canon MP Navigator EX 4.0",
+                "version": null,
+                "publisher": null
+            },
+            "Picasa 3": {
+                "name": "Picasa 3",
+                "version": "3.9.141.259",
+                "publisher": "Google, Inc."
+            },
+            "Planner": {
+                "name": "Planner",
+                "version": "0.7",
+                "publisher": "Graviteam"
+            },
+            "PyCharm 2023.2.5": {
+                "name": "PyCharm 2023.2.5",
+                "version": "232.10227.11",
+                "publisher": "JetBrains s.r.o."
+            },
+            "Qt Designer": {
+                "name": "Qt Designer",
+                "version": null,
+                "publisher": "Michael Herrmann"
+            },
+            "Shareman, версия 102.3.78.235": {
+                "name": "Shareman, версия 102.3.78.235",
+                "version": "102.3.78.235",
+                "publisher": null
+            },
+            "The Agency of Anomalies 3- The Last Performance CE Rus 1.00": {
+                "name": "The Agency of Anomalies 3- The Last Performance CE Rus 1.00",
+                "version": null,
+                "publisher": null
+            },
+            "Ultimaker Cura 3.2": {
+                "name": "Ultimaker Cura 3.2",
+                "version": "3.2.1",
+                "publisher": "Ultimaker"
+            },
+            "UltraISO Premium V8.2": {
+                "name": "UltraISO Premium V8.2",
+                "version": null,
+                "publisher": null
+            },
+            "Microsoft Office Visio Профессиональный 2007": {
+                "name": "Microsoft Office Visio Профессиональный 2007",
+                "version": "12.0.6612.1000",
+                "publisher": "Microsoft Corporation"
+            },
+            "VLC media player": {
+                "name": "VLC media player",
+                "version": "3.0.21",
+                "publisher": "VideoLAN"
+            },
+            "Windows Media Encoder 9 Series": {
+                "name": "Windows Media Encoder 9 Series",
+                "version": null,
+                "publisher": null
+            },
+            "Основные компоненты Windows Live": {
+                "name": "Основные компоненты Windows Live",
+                "version": "16.4.3505.0912",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server 2012 T-SQL Language Service ": {
+                "name": "Microsoft SQL Server 2012 T-SQL Language Service ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft System CLR Types for SQL Server 2012": {
+                "name": "Microsoft System CLR Types for SQL Server 2012",
+                "version": "11.1.3366.16",
+                "publisher": "Microsoft Corporation"
+            },
+            "Entity Framework Tools for Visual Studio 2013": {
+                "name": "Entity Framework Tools for Visual Studio 2013",
+                "version": "12.0.20912.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server Data Tools - enu (12.0.30919.1)": {
+                "name": "Microsoft SQL Server Data Tools - enu (12.0.30919.1)",
+                "version": "12.0.30919.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft .NET Framework 4.5.1 SDK": {
+                "name": "Microsoft .NET Framework 4.5.1 SDK",
+                "version": "4.5.51641",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server 2012 Data-Tier App Framework ": {
+                "name": "Microsoft SQL Server 2012 Data-Tier App Framework ",
+                "version": "11.1.2902.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "MSXML 4.0 SP3 Parser (KB2758694)": {
+                "name": "MSXML 4.0 SP3 Parser (KB2758694)",
+                "version": "4.30.2117.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Python Launcher": {
+                "name": "Python Launcher",
+                "version": "3.13.150.0",
+                "publisher": "Python Software Foundation"
+            },
+            "Microsoft Windows Desktop Runtime - 5.0.17 (x64)": {
+                "name": "Microsoft Windows Desktop Runtime - 5.0.17 (x64)",
+                "version": "5.0.17.31219",
+                "publisher": "Microsoft Corporation"
+            },
+            "1C:Предприятие 8 (8.3.4.365)": {
+                "name": "1C:Предприятие 8 (8.3.4.365)",
+                "version": "8.3.4.365",
+                "publisher": "1C"
+            },
+            "Microsoft SQL Server 2012 Management Objects ": {
+                "name": "Microsoft SQL Server 2012 Management Objects ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030": {
+                "name": "Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030",
+                "version": "11.0.61030.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Prerequisites for SSDT ": {
+                "name": "Prerequisites for SSDT ",
+                "version": "11.1.3000.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "1C:Предприятие 8 (8.3.9.2170)": {
+                "name": "1C:Предприятие 8 (8.3.9.2170)",
+                "version": "8.3.9.2170",
+                "publisher": "1C"
+            },
+            "Microsoft ASP.NET MVC 4 Runtime": {
+                "name": "Microsoft ASP.NET MVC 4 Runtime",
+                "version": "4.0.40804.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft .NET Framework 4.5 SDK": {
+                "name": "Microsoft .NET Framework 4.5 SDK",
+                "version": "4.5.50710",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft .NET Framework 4.5 Multi-Targeting Pack": {
+                "name": "Microsoft .NET Framework 4.5 Multi-Targeting Pack",
+                "version": "4.5.50710",
+                "publisher": "Microsoft Corporation"
+            },
+            "WCF RIA Services V1.0 SP2": {
+                "name": "WCF RIA Services V1.0 SP2",
+                "version": "4.1.62812.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660": {
+                "name": "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660",
+                "version": "12.0.40660.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server Data Tools Build Utilities - enu (12.0.30919.1)": {
+                "name": "Microsoft SQL Server Data Tools Build Utilities - enu (12.0.30919.1)",
+                "version": "12.0.30919.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft .NET Framework 4.5.1 Multi-Targeting Pack": {
+                "name": "Microsoft .NET Framework 4.5.1 Multi-Targeting Pack",
+                "version": "4.5.50932",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2005 Redistributable": {
+                "name": "Microsoft Visual C++ 2005 Redistributable",
+                "version": "8.0.61001",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005": {
+                "name": "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005",
+                "version": "12.0.21005.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Налогоплательщик ЮЛ": {
+                "name": "Налогоплательщик ЮЛ",
+                "version": "4.43",
+                "publisher": "ФГУП ГНИВЦ ФНС России"
+            },
+            "Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29913": {
+                "name": "Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29913",
+                "version": "14.28.29913.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "MSXML 4.0 SP2 (KB954430)": {
+                "name": "MSXML 4.0 SP2 (KB954430)",
+                "version": "4.20.9870.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "1С:Предприятие 8 (8.3.19.1467)": {
+                "name": "1С:Предприятие 8 (8.3.19.1467)",
+                "version": "8.3.19.1467",
+                "publisher": "1С-Софт"
+            },
+            "Realtek USB 2.0 Card Reader": {
+                "name": "Realtek USB 2.0 Card Reader",
+                "version": "6.1.7600.30127",
+                "publisher": "Realtek Semiconductor Corp."
+            },
+            "Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17": {
+                "name": "Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17",
+                "version": "9.0.30729",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161": {
+                "name": "Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161",
+                "version": "9.0.30729.6161",
+                "publisher": "Microsoft Corporation"
+            },
+            "Программа подготовки документов для государственной регистрации": {
+                "name": "Программа подготовки документов для государственной регистрации",
+                "version": "1.4.9",
+                "publisher": "АО ГНИВЦ"
+            },
+            "Microsoft Windows Desktop Runtime - 6.0.10 (x86)": {
+                "name": "Microsoft Windows Desktop Runtime - 6.0.10 (x86)",
+                "version": "6.0.10.31726",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server System CLR Types": {
+                "name": "Microsoft SQL Server System CLR Types",
+                "version": "10.50.1600.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft .NET Runtime - 5.0.10 (x64)": {
+                "name": "Microsoft .NET Runtime - 5.0.10 (x64)",
+                "version": "5.0.10.30412",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server Browser": {
+                "name": "Microsoft SQL Server Browser",
+                "version": "10.50.1600.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Adobe Acrobat Reader - Russian": {
+                "name": "Adobe Acrobat Reader - Russian",
+                "version": "24.004.20243",
+                "publisher": "Adobe Systems Incorporated"
+            },
+            "Windows Movie Maker 2.6": {
+                "name": "Windows Movie Maker 2.6",
+                "version": "2.6.4037.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "СБИС3 Плагин": {
+                "name": "СБИС3 Плагин",
+                "version": "21.5104.384",
+                "publisher": "Tensor Company Ltd"
+            },
+            "Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030": {
+                "name": "Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030",
+                "version": "11.0.61030.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Поддержка программ Apple (32 бит)": {
+                "name": "Поддержка программ Apple (32 бит)",
+                "version": "8.7",
+                "publisher": "Apple Inc."
+            },
+            "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005": {
+                "name": "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005",
+                "version": "12.0.21005.1",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft .NET Framework 4.5.1 Multi-Targeting Pack (ENU)": {
+                "name": "Microsoft .NET Framework 4.5.1 Multi-Targeting Pack (ENU)",
+                "version": "4.5.50932",
+                "publisher": "Microsoft Corporation"
+            },
+            "Печать НД с PDF417 3.4.2 (пакет)": {
+                "name": "Печать НД с PDF417 3.4.2 (пакет)",
+                "version": "3.4.2",
+                "publisher": "АО «ГНИВЦ»"
+            },
+            "Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.29.30037": {
+                "name": "Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.29.30037",
+                "version": "14.29.30037.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "USB2.0 UVC 1.3M Webcam": {
+                "name": "USB2.0 UVC 1.3M Webcam",
+                "version": "6.2.9200.10296",
+                "publisher": "Realtek Semiconductor Corp."
+            },
+            "Microsoft Silverlight 5 SDK": {
+                "name": "Microsoft Silverlight 5 SDK",
+                "version": "5.0.61118.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "1C:Предприятие 8 (8.3.6.2299)": {
+                "name": "1C:Предприятие 8 (8.3.6.2299)",
+                "version": "8.3.6.2299",
+                "publisher": "1C"
+            },
+            "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660": {
+                "name": "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660",
+                "version": "12.0.40660.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft SQL Server 2005 Compact Edition [ENU]": {
+                "name": "Microsoft SQL Server 2005 Compact Edition [ENU]",
+                "version": "3.1.0000",
+                "publisher": "Microsoft Corporation"
+            },
+            "Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219": {
+                "name": "Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219",
+                "version": "10.0.40219",
+                "publisher": "Microsoft Corporation"
+            },
+            "Intel(R) Processor Graphics": {
+                "name": "Intel(R) Processor Graphics",
+                "version": "9.17.10.4229",
+                "publisher": "Intel Corporation"
+            },
+            "MSXML 4.0 SP2 (KB973688)": {
+                "name": "MSXML 4.0 SP2 (KB973688)",
+                "version": "4.20.9876.0",
+                "publisher": "Microsoft Corporation"
+            },
+            "Декларация 2014": {
+                "name": "Декларация 2014",
+                "version": null,
+                "publisher": null
+            },
+            "Декларация 2015": {
+                "name": "Декларация 2015",
+                "version": null,
+                "publisher": null
+            },
+            "Декларация 2016": {
+                "name": "Декларация 2016",
+                "version": null,
+                "publisher": null
             }
         }
     }

@@ -13,14 +13,14 @@ def main():
         with open(f'info_{uname().node}.json', 'w', encoding='utf-8') as file:
             json.dump(dict_info, file, indent=4, ensure_ascii=False)
         print_info(dict_info)
-        for app in winapps.list_installed():
-           print(app)
+
     elif uname().system == "Linux":
         dict_info = creating_file()
         with open(f'info_{uname().node}.json', 'w', encoding='utf-8') as file:
             json.dump(dict_info, file, indent=4, ensure_ascii=False)
         print_info(dict_info)
     print("Конец программы")
+
 
 def correct_size(bts, ending='iB'):
     size = 1024
@@ -75,6 +75,21 @@ def creating_file():
                     'mac': interface_address[0].address.replace("-", ":"),
                     'ipv4': interface_address[1].address,
                     'ipv6': interface_address[2].address}
+    if uname().system == "Windows":
+        i=0
+        for app in winapps.list_installed():
+           # i=i+1
+           # if(i>30):
+          #      break
+            if 'app_installed' not in collect_info_dict['info']:
+                collect_info_dict['info']['app_installed'] = dict()
+            if f"'app_installed': {app.name}" not in collect_info_dict['info']['app_installed']:
+                collect_info_dict['info']['app_installed'][app.name] = dict()
+                collect_info_dict['info']['app_installed'][app.name] = {'name': app.name,
+                                                                        'version': app.version,
+                                                                       # 'install_date': app.install_date,
+                                                                        'publisher': app.publisher}
+    print(collect_info_dict)
     return collect_info_dict
 
 def print_info(dict_info):
@@ -114,6 +129,13 @@ def print_info(dict_info):
                       f"\t- MAC-адрес: {dict_info['info'][item][elem]['mac']}\n"
                       f"\t- IPv4: {dict_info['info'][item][elem]['ipv4']}\n"
                       f"\t- IPv6: {dict_info['info'][item][elem]['ipv6']}\n")
+        if item == "app_installed":
+            for elem in dict_info['info'][item]:
+                print(f"[+] Установленное ПО\n"
+                      f"\t- Имя: {elem}\n"
+                      f"\t- версия: {dict_info['info'][item][elem]['version']}\n"
+                     # f"\t- дата установки: {dict_info['info'][item][elem]['install_date']}\n"
+                      f"\t- разработчик: {dict_info['info'][item][elem]['publisher']}\n")
 
 if __name__ == "__main__":
     main()
