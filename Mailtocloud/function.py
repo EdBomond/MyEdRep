@@ -25,6 +25,8 @@ def from_subj_decode(msg_from_subj):
         return msg_from_subj
     else:
         return None
+
+
 def get_letter_text_from_html(body):
     body = body.replace("<div><div>", "<div>").replace("</div></div>", "</div>")
     try:
@@ -37,6 +39,7 @@ def get_letter_text_from_html(body):
     except (Exception) as exp:
         print("text ftom html err ", exp)
         return False
+
 def letter_type(part):
     if part["Content-Transfer-Encoding"] in (None, "7bit", "8bit", "binary"):
         return part.get_payload()
@@ -73,6 +76,7 @@ def get_letter_text(msg):
                 letter_text = extract_part
             count += 1
             return letter_text.replace("<", "").replace(">", "").replace("\xa0", " ")
+
 def get_attachments(msg):
     attachments = list()
     for part in msg.walk():
@@ -85,6 +89,7 @@ def get_attachments(msg):
             str_pl = encode_att_names(str_pl)
             attachments.append(str_pl)
     return attachments
+
 def post_construct(msg_subj, msg_from, msg_email, letter_text, attachments):
     att_txt = "\n".join(attachments)
     postparts = [
@@ -114,6 +119,7 @@ def date_parse(msg_date):
         dt_obj = dt_obj.strip("'(),")
         dt_obj = datetime.strptime(dt_obj, "%Y, %m, %d, %H, %M, %S")
         return dt_obj
+
 def encode_att_names(str_pl):
     enode_name = re.findall("\=\?.*?\?\=", str_pl)
     if len(enode_name) == 1:
@@ -134,32 +140,37 @@ def encode_att_names(str_pl):
                 str_pl = str_pl.replace(enode_name[c], "").replace('"', "").rstrip()
     return str_pl
 
-def send_attach(msg, msg_subj, repl, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name, download_folder) -> bool:
+def send_attach(msg, msg_subj, repl, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name, download_folder,batery) -> bool:
     try:
         for part in msg.walk():
             if part.get_content_disposition() == "attachment":
                 filename = part.get_filename()
                 filename = from_subj_decode(filename)
-                loop = asyncio.get_event_loop()
-                loop.run_until_complete(
-                    send_document(
-                        part.get_payload(decode=True), filename, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name, download_folder
-                    )
-                )
-                # удалим файл с диска
-                download_path = f"{download_folder}/{msg_date}_{filename}"
-                try:
+                # проверка наличия файла в папке облака
+                # сформируем полный путь
+                cloudfilename=f"{IMEI}-{IMEI_name}/{msg_date}_{filename}"
+                
+                if client.check(cloudfilename):
+                   print(f"{cloudfilename} найден!") 
+                else:
+                  print(f"{cloudfilename} не найден!") 
+                  loop = asyncio.get_event_loop()
+                  loop.run_until_complete(send_document(part.get_payload(decode=True), filename, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name, download_folder, batery))
+                  # удалим файл с диска
+                  download_path = f"{download_folder}/{msg_date}_{filename}"
+                  try:
                    os.remove(download_path)
-                   print("% s removed successfully" % download_path)
-                except OSError as error:
+                   print("% s удален успешно " % download_path)
+                  except OSError as error:
                    print(error)
-                   print(f"File {download_path} can not be removed")
+                   print(f"Файл {download_path} не может быть удален!")
         return True
     except Exception:
         print(f"Не выгрузили приложения! {IMEI}-{IMEI_name} {msg_datetelegramm}")
         # пометить письмо как непрочитанное
         return False
-async def send_document(document, filename, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name,download_folder):
+
+async def send_document(document, filename, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name,download_folder,batery):
         download_path = f"{download_folder}/{msg_date}_{filename}"
         #print(download_path)
         #print(document)
@@ -177,12 +188,12 @@ async def send_document(document, filename, IMEI, client, msg_date, bot, chatid,
         #print(f"{config.download_folder}/{filename}")
         client.upload_sync(f"//{IMEI}-{IMEI_name}/{msg_date}_{filename}", f"{download_folder}/{msg_date}_{filename}")
         print(f"Выгружен файл {msg_date}_{filename} в облако в папку {IMEI}-{IMEI_name}")
-        #text = f"Пришло письмо с устройства IMEI: {IMEI}-{IMEI_name} {msg_datetelegramm}"
-        #bot.send_message(chatid, text)
+        text = f"{batery}"
+        bot.send_message(chatid, text)
         #print(f"Направили текст в чат {chatid} телеграмма")
         img = open(download_path, 'rb')
         print(f"Открыли фотографию {download_path}")
-        #bot.send_photo(chatid, img)
+        bot.send_photo(chatid, img)#####
         print(f"Отправили фотографию {download_path} в чат телеграмма")
         fp.close()
 
