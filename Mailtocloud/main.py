@@ -8,7 +8,6 @@ import traceback
 from webdav3.client import Client
 from datetime import datetime, timedelta
 import datetime
-
 import os
 
 ENCODING = config.encoding
@@ -103,16 +102,17 @@ except (Exception) as exp:
 
 imap.select("INBOX")
 #result, data = imap.uid('search', "UNSEEN", "ALL")
+#result, data = imap.uid('search', None, 'ALL')
 
 date = (datetime.date.today() - datetime.timedelta(0)).strftime("%d-%b-%Y")
 result, data = imap.uid('search', None, '(SENTSINCE {date})'.format(date=date))
 print(result)
 print(data)
-#result, data = imap.uid('search', None, 'ALL')
+
 unseen_msg = data[0].decode(ENCODING).split(" ")
 if unseen_msg[0]:
     print(f"Найдено писем: {len(unseen_msg)}")
-    for letter in unseen_msg:
+    for letter in unseen_msg: ###############################################
        #print(letter)
        #latest_email_uid = data[0].split()[-1]
        res, msg  = imap.uid('fetch', letter, '(RFC822)')
@@ -144,6 +144,16 @@ if unseen_msg[0]:
                 )
 
             letter_text = function.get_letter_text(msg)
+            #print(letter_text)
+            values = letter_text.split('\n')
+            #print(values)
+            batery="-"
+            for value in values:
+                var , val = value.strip().split(":")
+                print(f"{var} {val}")
+                if var=="Battery":
+                   batery=f"Батарея {val}"
+            print(batery)       
             attachments = function.get_attachments(msg)
             post_text = function.post_construct(
                         msg_subj, msg_from, msg_email, letter_text, attachments)
@@ -162,9 +172,9 @@ if unseen_msg[0]:
                 print(f"IMEI: {IMEI} Тема:{msg_subj} от {msg_from} для {msg_email} с вложением {attachments}")
                 Send_ok = True;
                 if attachments:
-                    Send_ok=function.send_attach(msg, msg_subj, repl, IMEI, client, msg_datestr, bot, IMEI_chatid, msg_datetelegramm, IMEI_name, download_folder)
+                    Send_ok=function.send_attach(msg, msg_subj, repl, IMEI, client, msg_datestr, bot, IMEI_chatid, msg_datetelegramm, IMEI_name, download_folder, batery)
                 if not Send_ok:
-                   imap.uid('STORE', letter, '-FLAGS', '(\Seen)')
+                   # imap.uid('STORE', letter, '-FLAGS', '(\Seen)')
                    print(f"Пометили письмо {letter} как непрочитанное, так как не смоглм выгрузить вложения!")
                 # if res == "OK":
         # if res == "OK":
@@ -172,5 +182,7 @@ if unseen_msg[0]:
 else:
   print(f"Найдено писем: {len(unseen_msg)-1}")
 #if unseen_msg[0]:
+
 print(f"Обработка писем закончена!")
 #bot.polling()
+
