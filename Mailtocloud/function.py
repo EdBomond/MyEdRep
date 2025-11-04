@@ -149,11 +149,20 @@ def send_attach(msg, msg_subj, repl, IMEI, client, msg_date, bot, chatid, msg_da
                 # проверка наличия файла в папке облака
                 # сформируем полный путь
                 cloudfilename=f"{IMEI}-{IMEI_name}/{msg_date}_{filename}"
-                
+                #client.clean("865828060648555-NewHook")
+                #client.clean("862757053728285-Анисимова гора")
+                #client.clean("869492054970339-Мешок")
+                #client.clean("862757052770387-Березка")
+                #client.clean("860425047094220-Хутора")
                 if client.check(cloudfilename):
-                   print(f"{cloudfilename} найден!") 
+                   print(f"{cloudfilename} найден!")
                 else:
-                  print(f"{cloudfilename} не найден!") 
+                  print(f"{cloudfilename} не найден!")
+
+                if client.check(cloudfilename):
+                   print(f"{cloudfilename} найден!")
+                else:
+                  print(f"{cloudfilename} не найден!")
                   loop = asyncio.get_event_loop()
                   loop.run_until_complete(send_document(part.get_payload(decode=True), filename, IMEI, client, msg_date, bot, chatid, msg_datetelegramm, IMEI_name, download_folder, batery))
                   # удалим файл с диска
@@ -165,8 +174,8 @@ def send_attach(msg, msg_subj, repl, IMEI, client, msg_date, bot, chatid, msg_da
                    print(error)
                    print(f"Файл {download_path} не может быть удален!")
         return True
-    except Exception:
-        print(f"Не выгрузили приложения! {IMEI}-{IMEI_name} {msg_datetelegramm}")
+    except Exception  as e:
+        print(f"Не выгрузили приложения! {IMEI}-{IMEI_name} {msg_datetelegramm} {e}")
         # пометить письмо как непрочитанное
         return False
 
@@ -176,7 +185,6 @@ async def send_document(document, filename, IMEI, client, msg_date, bot, chatid,
         #print(document)
         with open(download_path, "wb") as fp:
             fp.write(document)
-
         if not client.check(f"{IMEI}-{IMEI_name}"):
             client.mkdir(f"{IMEI}-{IMEI_name}")
             print(f"Создана папка {IMEI}-{IMEI_name} в облаке")
@@ -186,16 +194,24 @@ async def send_document(document, filename, IMEI, client, msg_date, bot, chatid,
 
         #client.upload_sync(f"{IMEI}/", f"{config.download_folder}/{filename}")
         #print(f"{config.download_folder}/{filename}")
-        client.upload_sync(f"//{IMEI}-{IMEI_name}/{msg_date}_{filename}", f"{download_folder}/{msg_date}_{filename}")
-        print(f"Выгружен файл {msg_date}_{filename} в облако в папку {IMEI}-{IMEI_name}")
-        text = f"{batery}"
-        bot.send_message(chatid, text)
-        #print(f"Направили текст в чат {chatid} телеграмма")
-        img = open(download_path, 'rb')
-        print(f"Открыли фотографию {download_path}")
-        bot.send_photo(chatid, img)#####
-        print(f"Отправили фотографию {download_path} в чат телеграмма")
-        fp.close()
+        try:
+           client.upload_sync(f"//{IMEI}-{IMEI_name}/{msg_date}_{filename}", f"{download_folder}/{msg_date}_{filename}")
+           print(f"Выгружен файл {msg_date}_{filename} в облако в папку {IMEI}-{IMEI_name}")
+           text = f"{batery}"
+           bot.send_message(chatid, text)
+           #print(f"Направили текст в чат {chatid} телеграмма")
+           img = open(download_path, 'rb')
+           print(f"Открыли фотографию {download_path}")
+           print(f"Открыли фотографию {img}")
+           bot.send_photo(chatid, img)#####
+           print(f"Отправили фотографию {download_path} в чат телеграмма")
+           fp.close()
+        except Exception  as e:
+           print(f"Не отправили фото в телеграмм! {IMEI}-{IMEI_name} {msg_date}_{filename} {e}")
+           # пометить письмо как непрочитанное
+           client.clean(f"//{IMEI}-{IMEI_name}/{msg_date}_{filename}")
+           print(f"{IMEI}-{IMEI_name}/{msg_date}_{filename} удален успешно ")
+           return False
 
 def check_setting() -> bool:
     """
